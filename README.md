@@ -50,6 +50,7 @@ Confirm the deletion by answering yes in the terminal. The application will disa
 
 Now deploy it again.
 
+```
 argocd app create demo \
 --project default \
 --repo https://github.com/codefresh-contrib/gitops-certification-examples \
@@ -57,6 +58,7 @@ argocd app create demo \
 --sync-policy auto \
 --dest-namespace default \
 --dest-server https://kubernetes.default.svc
+```
 The application will appear in the ArgoCD dashboard.
 
 Confirm the deployment
